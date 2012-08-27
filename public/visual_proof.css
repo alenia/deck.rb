@@ -1,0 +1,93 @@
+/* in multiples of 30px*/
+.visual_proof {
+  position: relative;
+  font-family: monospace;
+}
+
+.visual_proof ol {
+  top: 0;
+  display: block;
+  position: absolute;
+  width: 210px; /*$ROWS * 30px*/
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  list-style: none;
+  line-height: 30px;
+}
+
+.visual_proof .giant {
+  position: absolute;
+  top: 0;
+  line-height: 270px;
+  font-size:60px;
+  color: #666666;
+}
+
+.visual_proof .giant.plus {
+  left: 230px;
+}
+
+.visual_proof .giant.arrow {
+  left: 510px;
+}
+
+.visual_proof ol.right {
+  text-align: right;
+}
+
+.visual_proof ol.left {
+  color: #CC0000;
+  left: 290px;
+}
+
+.visual_proof li {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+}
+
+.visual_proof li.numbers {
+  font-size: 15px; /* half size */
+}
+
+.visual_proof .dup li.numbers {
+  color: white;
+}
+
+.visual_proof ol span {
+  display: inline-block;
+  width: 30px;
+}
+
+.visual_proof .fadein {
+  opacity: 0;
+}
+
+.visual_proof .bracket_bottom, .visual_proof .bracket_right {
+  position: absolute;
+}
+
+.visual_proof .bracket_right {
+  top: -20px;
+  left: 800px;
+}
+
+.visual_proof .bracket_bottom {
+  z-index: 100;
+  left: 760px;
+  top: 250px;
+}
+
+.visual_proof .bracket_right span{
+  font-weight: 100;
+  font-size: 240px;
+}
+
+.visual_proof .bracket_bottom div{
+  height: 100px;
+  font-weight: 100;
+  font-size: 210px;
+  -webkit-transform: rotate(90deg);
+}
+

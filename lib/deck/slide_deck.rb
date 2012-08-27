@@ -67,6 +67,8 @@ module Deck
     stylesheet public_asset("coderay.css")
     stylesheet public_asset("tables.css")
     stylesheet public_asset("toc.css")
+    stylesheet public_asset("my.css")
+    stylesheet public_asset("visual_proof.css")
   end
 
   def scripts
@@ -86,8 +88,12 @@ module Deck
     script :type => "text/javascript", :src => public_asset('deck.js/core/deck.core.js')
 
     extensions.each do |extension|
-      script :type => "text/javascript", :src => public_asset("deck.js/extensions/#{extension}/deck.#{extension}.js")
+        script :type => "text/javascript", :src => public_asset("deck.js/extensions/#{extension}/deck.#{extension}.js")
     end
+
+    #MathJax
+    script :type => "text/javascript", :src => public_asset("MathJax/MathJax.js?config=default")
+    script :type => "text/javascript", :src => public_asset("visual_proof.js")
 
     # fire up deck.js
     script "$(function(){$.deck('.slide');});"

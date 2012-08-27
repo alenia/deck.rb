@@ -1,0 +1,52 @@
+.center{
+  text-align: center;
+}
+
+.deck-container .pascal {
+  line-height: 1em;
+  letter-spacing: 2px;
+  white-space: pre;
+  font-family: monospace;
+  display: block;
+  font-size:20px;
+}
+
+.pascal .MathJax{
+  color: #666;
+}
+
+.hide-math .MathJax{
+  color: white;
+}
+
+.deck-container .math {
+  margin-bottom: 40px;
+}
+
+table.math {
+  margin: 10px auto;
+  border: none;
+}
+
+table.math tr td {
+  background: white;
+  border: none;
+  height: 3em;
+  line-height: 1.8em;
+}
+
+table.math td:first-child {
+  text-align: right;
+}
+
+table.math tr {
+  border: none;
+}
+
+td.frac {
+  font-size: 1.8em;
+}
+
+span.frac {
+  font-size: 1.5em;
+}
