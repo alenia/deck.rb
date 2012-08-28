@@ -93,15 +93,10 @@ module Deck
     end
 
     #MathJax from CDN
+    script "MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'] ] } });", :type => 'text/x-mathjax-config'
+
     script :src => '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=default'
-    
-    script <<JS
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'] ]
-        }
-      });
-JS
+
 
     #uncomment this for local mathjax
     #script :type => "text/javascript", :src => public_asset("MathJax/MathJax.js?config=default")
