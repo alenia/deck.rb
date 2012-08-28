@@ -23,25 +23,6 @@
   margin-bottom: 40px;
 }
 
-table.math {
-  margin: 10px auto;
-  border: none;
-}
-
-table.math tr td {
-  background: white;
-  border: none;
-  height: 3em;
-  line-height: 1.8em;
-}
-
-table.math td:first-child {
-  text-align: right;
-}
-
-table.math tr {
-  border: none;
-}
 
 td.frac {
   font-size: 1.8em;

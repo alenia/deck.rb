@@ -69,6 +69,7 @@ module Deck
     stylesheet public_asset("toc.css")
     stylesheet public_asset("my.css")
     stylesheet public_asset("visual_proof.css")
+    stylesheet public_asset("math_table.css")
   end
 
   def scripts
@@ -93,7 +94,7 @@ module Deck
 
     #MathJax
     script :type => "text/javascript", :src => public_asset("MathJax/MathJax.js?config=default")
-    script :type => "text/javascript", :src => public_asset("visual_proof.js")
+    script :type => "text/javascript", :src => public_asset("custom_animations.js")
 
     # fire up deck.js
     script "$(function(){$.deck('.slide');});"

@@ -1,0 +1,53 @@
+.slide table.math, .slide table.math tr, .slide table.math tr td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.slide table.math {
+  margin: 10px 100px;
+  position: relative;
+}
+
+.slide table.math tr td {
+  padding: 0px 10px;
+  height: 80px;
+}
+
+table.math td:first-child {
+  text-align: right;
+}
+
+table.math tr td:first-child, table.math tr td:nth-child(3) {
+  width: 250px;
+}
+
+table.math tr td:nth-child(2) {
+  width: 25px;
+}
+
+table.math tr.top, table.math tr.middle {
+  opacity: 1;
+}
+
+table.math tr.top {
+  top: 0;
+}
+
+table.math tr.middle {
+  top: 80px;
+}
+
+table.math tr.waiting {
+  opacity: .2;
+}
+
+table.math tr {
+  top: 160px;
+  opacity: 0;
+  position: absolute;
+  width: 600px;
+  height: 80px;
+}
+
