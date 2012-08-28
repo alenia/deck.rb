@@ -92,8 +92,24 @@ module Deck
         script :type => "text/javascript", :src => public_asset("deck.js/extensions/#{extension}/deck.#{extension}.js")
     end
 
-    #MathJax
-    script :type => "text/javascript", :src => public_asset("MathJax/MathJax.js?config=default")
+    #MathJax from CDN
+    script :src => '//www.mathjax.org/docs/2.0/start.html'
+    script <<JS
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+JS
+    
+    #uncomment this for local mathjax
+    #script :type => "text/javascript", :src => public_asset("MathJax/MathJax.js?config=default")
+
     script :type => "text/javascript", :src => public_asset("custom_animations.js")
 
     # fire up deck.js
