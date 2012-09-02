@@ -29,7 +29,7 @@
 }
 
 .visual_proof .giant.arrow {
-  left: 510px;
+  left: 470px;
 }
 
 .visual_proof ol.right {
@@ -52,7 +52,7 @@
 }
 
 .visual_proof .dup li.numbers {
-  color: white;
+  opacity: 0;
 }
 
 .visual_proof ol span {
@@ -64,29 +64,44 @@
   opacity: 0;
 }
 
-.visual_proof .bracket_bottom, .visual_proof .bracket_right {
+.visual_proof .bracket_bottom, .visual_proof .bracket_right, .visual_proof .text {
   position: absolute;
 }
 
+
 .visual_proof .bracket_right {
   top: -20px;
-  left: 800px;
+  left: 740px;
 }
 
 .visual_proof .bracket_bottom {
-  z-index: 100;
-  left: 760px;
+  left: 710px;
   top: 250px;
+
 }
 
-.visual_proof .bracket_right span{
+.visual_proof .bracket {
+  font-weight: 100;
+}
+
+.visual_proof .bracket_bottom .text {
+  left: -85px;
+  top: 70px;
+}
+
+.visual_proof .bracket_right .text {
+  left: 70px;
+  bottom: 120px;
+  width: 100px;
+}
+
+.visual_proof .bracket_right .bracket{
   font-weight: 100;
   font-size: 240px;
 }
 
-.visual_proof .bracket_bottom div{
+.visual_proof .bracket_bottom .bracket{
   height: 100px;
-  font-weight: 100;
   font-size: 210px;
   -webkit-transform: rotate(90deg);
 }

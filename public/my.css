@@ -23,11 +23,12 @@
   margin-bottom: 40px;
 }
 
-
-td.frac {
-  font-size: 1.8em;
+.slide .math h2 {
+  color: #000099;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: normal;
 }
 
-span.frac {
-  font-size: 1.5em;
+.slide .math h1 {
+  font-weight: normal;
 }

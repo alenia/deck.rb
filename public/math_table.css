@@ -3,16 +3,24 @@
   padding: 0;
   border: none;
   background: none;
+  font-size: 1.2em;
+}
+
+table.math span.frac {
+  font-size: 2em;
+}
+
+.slide table.math td.frac {
+  font-size: 2em;
 }
 
 .slide table.math {
-  margin: 10px 100px;
+  margin: 10px -30px;
   position: relative;
 }
 
 .slide table.math tr td {
   padding: 0px 10px;
-  height: 80px;
 }
 
 table.math td:first-child {
@@ -20,34 +28,41 @@ table.math td:first-child {
 }
 
 table.math tr td:first-child, table.math tr td:nth-child(3) {
-  width: 250px;
+  width: 400px;
 }
 
 table.math tr td:nth-child(2) {
-  width: 25px;
+  width: 30px;
 }
 
-table.math tr.top, table.math tr.middle {
-  opacity: 1;
-}
+/*table.math tr.top, table.math tr.middle {*/
+  /*opacity: 1;*/
+/*}*/
 
 table.math tr.top {
   top: 0;
 }
 
 table.math tr.middle {
-  top: 80px;
-}
-
-table.math tr.waiting {
-  opacity: .2;
+  top: 4em;
 }
 
 table.math tr {
-  top: 160px;
+  top: 10em;
   opacity: 0;
   position: absolute;
-  width: 600px;
-  height: 80px;
+  width: 1000px;
+  height: 5em;
+}
+
+table.math tr.want {
+  border-top: 2px solid #EEE;
+  color: red;
+  padding-top: 10px;
+  top: 12em;
+}
+
+table.math tr.want.middle {
+  color: green;
 }
 
