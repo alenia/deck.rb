@@ -30,6 +30,9 @@ module Deck
           :element => "pre>code",
           :markdown => true,
           :pattern => /\A[:@]{3}\s?(\w+)\s*(\n|&#x000A;)/i
+        use Rack::Codehighlighter, :coderay,
+          :element => "pre.cr",
+          :pattern => /\A:::(\w+)\s*\n/i
         run ::Deck::RackApp.new(slide_files)
       end
     end

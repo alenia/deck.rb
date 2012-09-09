@@ -48,7 +48,10 @@ $(document).on('keyup', function(event) {
       animateDots();
     break;
     case 76: //l
-      fadeIn('.lc');
+      fadeIn('.no_method');
+    break;
+    case 75: //k
+      fadeIn('.sigma');
     break;
     case 78: //n
       if(tableTransitionCallCount === 0) {

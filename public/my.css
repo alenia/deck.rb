@@ -32,3 +32,49 @@
 .slide .math h1 {
   font-weight: normal;
 }
+
+.math_vs_code {
+  display: inline-block;
+  width: 100%;
+}
+
+.math_vs_code:after {
+  content ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.math_vs_code .math, .math_vs_code .CodeRay {
+  width: 46%;
+  float: left;
+}
+
+.math.half {
+  padding-top: 20px;
+}
+
+.slide.padded {
+  padding-top: 50px;
+}
+
+.slide.big {
+  padding-top: 200px;
+  font-weight: bold;
+  font-size: 2.25em;
+}
+
+.slide.big h2 {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.slide.big.blue {
+  background: #DDEEFF;
+  color: #009900;
+}
+
+.deck-container .sigma {
+  margin-top: 50px;
+  display: block;
+  font-size: 2.8em;
+}
