@@ -47,11 +47,14 @@ $(document).on('keyup', function(event) {
     case 80: //p
       animateDots();
     break;
+    case 74: //j
+      fadeIn('.sigma');
+      break;
+    case 75: //k
+      fadeIn('.example_sums');
+    break;
     case 76: //l
       fadeIn('.no_method');
-    break;
-    case 75: //k
-      fadeIn('.sigma');
     break;
     case 78: //n
       if(tableTransitionCallCount === 0) {

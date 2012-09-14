@@ -38,6 +38,15 @@
   width: 100%;
 }
 
+.slide table.nostyle, .slide table.nostyle tr, .slide table.nostyle tr td {
+  background: none;
+  border: 0;
+}
+
+.slide table.nostyle td.frac {
+  font-size: 1.4em;
+}
+
 .math_vs_code:after {
   content ".";
   display: block;
@@ -59,6 +68,11 @@
 
 .slide.big {
   padding-top: 200px;
+  font-weight: bold;
+  font-size: 2.25em;
+}
+
+.slide .big {
   font-weight: bold;
   font-size: 2.25em;
 }
